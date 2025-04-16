@@ -11,9 +11,9 @@ const Contact = () => {
         <div className="text-center">
           <a href="https://www.linkedin.com/in/indiphe-nondlazi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTIZKMHESTcynV0IfKUWFkw%3D%3D" className="btn btn-primary m-2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="mailto:indipheyonwaba@gmail.com" className="btn btn-danger m-2">Email</a>
-          <a href="mailto:+27786503907" className="btn btn-danger m-2">Phone</a>
-          <a href="mailto:https://github.com/Indiphe" className="btn btn-danger m-2">GitHub</a>
-          <a href="mailto:https://app.netlify.com/teams/indiphe/sites" className="btn btn-danger m-2">Netlify</a>
+          <a href="mailto:+27786503907" className="btn btn-danger m-2"  target="_blank" rel="noopener noreferrer">Phone</a>
+          <a href="https://github.com/Indiphe" className="btn btn-primary m-2" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://app.netlify.com/teams/indiphe/sites" className="btn btn-danger m-2"  target="_blank" rel="noopener noreferrer">Netlify</a>
 
         </div>
       </div>

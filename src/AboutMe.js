@@ -10,6 +10,7 @@ const AboutMe = () => {
           {/* Left Side - Text */}
           <Col md={6}>
             <h2>Hello, I'm Indiphe Yonwaba Nondlazi 👋</h2>
+            <h6>Full-stack front-end developer based in Gqeberha, South Africa</h6>
             <h3>
               <Typical
                 steps={[
