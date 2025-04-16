@@ -20,7 +20,7 @@ const Projects = () => {
                   <Card.Text>
                     A real-time weather forecasting app built with HTML, CSS, and JavaScript. It fetches data from the OpenWeatherMap API to display dynamic weather updates based on user input. Designed with a clean, responsive UI for an intuitive experience.
                   </Card.Text>
-                  <Card.Link href="https://github.com/Indiphe/weather-app" target="_blank">GitHub</Card.Link>
+                  <Card.Link href="https://github.com/Indiphe/myweatherapp" target="_blank">GitHub</Card.Link>
                   <Card.Link href="https://dazzling-khapse-dffb4a.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
@@ -54,7 +54,7 @@ const Projects = () => {
               </Card>
             </Col>
           </Row>
-          
+
           <Row className="gy-4 mt-3">
     <Col md={4}>
       <Card className="h-100 shadow-sm">
