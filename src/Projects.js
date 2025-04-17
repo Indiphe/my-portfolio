@@ -9,12 +9,12 @@ const Projects = () => {
         <h2 className="text-center mb-5">My Projects</h2>
 
       {/* Individual Projects */}
-      <div className="mb-5">
+      <div id="individual-projects" className="mb-5">
           <h3 className="text-primary mb-4">Individual Projects</h3>
           <Row className="gy-4">
             <Col md={4}>
               <Card className="h-100 shadow-sm">
-                <Card.Img variant="top" src="/weather.jpg" />
+                <Card.Img variant="top"   src="/weather.jpg" />
                 <Card.Body>
                   <Card.Title>Weather Application</Card.Title>
                   <Card.Text>
@@ -75,7 +75,7 @@ const Projects = () => {
         </div>
 
       {/* Group Projects */}
-      <div>
+      <div id="group-projects">
           <h3 className="text-success mb-4">Group Projects</h3>
           <Row className="gy-4">
             <Col md={4}>
@@ -87,6 +87,9 @@ const Projects = () => {
                     A real-time chat application designed to facilitate seamless communication among users. Built with a focus on user experience,
                     it features a responsive design and intuitive interface, ensuring smooth interactions across devices. 
                   </Card.Text>
+                  <Card.Subtitle>
+                    Role: Backend Developer 
+                  </Card.Subtitle>
                   <Card.Link href="https://github.com/Indiphe/chat-app" target="_blank">GitHub</Card.Link>
                   <Card.Link href="https://aesthetic-frangipane-09091a.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
@@ -103,6 +106,9 @@ const Projects = () => {
                     The project emphasizes responsive design, user-friendly navigation, and efficient product management,
                     showcasing our commitment to quality and innovation in web development.
                   </Card.Text>
+                  <Card.Subtitle>
+                    Role: Frontend Developer 
+                  </Card.Subtitle>
                   <Card.Link href="https://github.com/buds345/Home-Page" target="_blank">GitHub</Card.Link>
                   <Card.Link href="https://jolly-sopapillas-2589b1.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
@@ -119,6 +125,9 @@ const Projects = () => {
                     The project emphasizes responsive design, user-friendly navigation, and efficient product management. The application
                     allows users to easily browse and purchase uniforms, showcasing our commitment to quality and innovation in web development.
                   </Card.Text>
+                  <Card.Subtitle>
+                    Role: Fullstack Developer 
+                  </Card.Subtitle>
                   <Card.Link href="https://github.com/Indiphe/Khanya-Best-Quality-Garments" target="_blank">GitHub</Card.Link>
                 </Card.Body>
               </Card>
@@ -134,6 +143,9 @@ const Projects = () => {
                     This project emphasizes data-driven decision-making and predictive analytics, showcasing our commitment to
                     leveraging technology for public health and safety.
                     </Card.Text>
+                    <Card.Subtitle>
+                    Role: Reasearch and Visualisation 
+                  </Card.Subtitle>
                   <Card.Link href="https://github.com/Indiphe/Code-Cartel-s" target="_blank">GitHub</Card.Link>
                 </Card.Body>
               </Card>
