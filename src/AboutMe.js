@@ -36,7 +36,7 @@ const AboutMe = () => {
             </p>
             {/* Button Below the Paragraph */}
             <a href="/cv.pdf" download="YourName_CV.pdf">
-              <Button variant="primary" className="mt-3">Download CV</Button>
+              <Button  style={{ backgroundColor: '#510F52' }} variant="primary" className="mt-3">Download CV</Button>
             </a>
           </Col>
 

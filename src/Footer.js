@@ -2,8 +2,15 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white text-center py-3">
-      <p>&copy; 2025 Indiphe Yonwaba Nondlazi. All rights reserved.</p>
+<footer
+  style={{
+    color: '#FEEAFE',
+    backgroundColor: 'rgb(51, 12, 54)',
+    textAlign: 'center',
+    padding: '20px',
+    paddingBottom: '10px',
+  }}
+>      <p>&copy; 2025 Indiphe Yonwaba Nondlazi. All rights reserved.</p>
     </footer>
   );
 };

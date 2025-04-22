@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
+.Appcontainer{
+  background-color:#E8E8E8;
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: e3f2fd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +39,28 @@
     transform: rotate(360deg);
   }
 }
+
+.custom-nav .nav-link,
+.custom-nav {
+  color: #E8E8E8 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .dropdown-toggle:hover {
+  color: #FEEAFE !important;
+  text-decoration: underline;
+  
+}
+.custom-nav .dropdown-menu .dropdown-item {
+  color:#510F52;
+  background-color: white ;
+  
+}
+
+.custom-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #510F52;
+  color: #E8E8E8;
+}
+
