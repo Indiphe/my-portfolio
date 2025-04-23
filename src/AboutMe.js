@@ -1,6 +1,8 @@
 import React from 'react';
 import Typical from 'react-typical';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import './App.css';
+
 
 const AboutMe = () => {
   return (
@@ -10,7 +12,7 @@ const AboutMe = () => {
           {/* Left Side - Text */}
           <Col md={6}>
             <h2>Hello, I'm Indiphe Yonwaba Nondlazi 👋</h2>
-            <h6>Full-stack front-end developer based in Gqeberha, South Africa</h6>
+            <h6>Full-stack developer based in Gqeberha, South Africa</h6>
             <h3>
               <Typical
                 steps={[
@@ -23,6 +25,8 @@ const AboutMe = () => {
                 wrapper="span"
               />
             </h3>
+            <div class="custom-card">
+
             <p>
          I have recently completed my final year of a diploma in ICT,
          specializing in Applications Development, at Walter Sisulu University (BCC-Potsdam), and I am currently awaiting graduation. 
@@ -34,9 +38,11 @@ const AboutMe = () => {
          I am now actively seeking IT job opportunities and internships to gain valuable industry exposure and experience, 
          with the aim of contributing to the growth and success of an organization.
             </p>
+            </div>
+
             {/* Button Below the Paragraph */}
             <a href="/cv.pdf" download="YourName_CV.pdf">
-              <Button  style={{ backgroundColor: '#510F52' }} variant="primary" className="mt-3">Download CV</Button>
+              <Button  style={{ backgroundColor: 'rgb(141, 127, 46)', border:'2px solid rgba(155, 133, 11, 0.77)' }}  variant="primary" className="mt-3">Download CV</Button>
             </a>
           </Col>
 

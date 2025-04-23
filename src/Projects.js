@@ -20,8 +20,8 @@ const Projects = () => {
                   <Card.Text>
                     A real-time weather forecasting app built with HTML, CSS, and JavaScript. It fetches data from the OpenWeatherMap API to display dynamic weather updates based on user input. Designed with a clean, responsive UI for an intuitive experience.
                   </Card.Text>
-                  <Card.Link href="https://github.com/Indiphe/myweatherapp" target="_blank">GitHub</Card.Link>
-                  <Card.Link href="https://dazzling-khapse-dffb4a.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  <Card.Link className='Links' href="https://github.com/Indiphe/myweatherapp" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='Links'  href="https://dazzling-khapse-dffb4a.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -34,8 +34,8 @@ const Projects = () => {
                   <Card.Text>
                     A single-page educational site created for a presentation. It introduces LangChain, outlines its key features, and explores real-world use cases. Focused on clarity, responsiveness, and visual storytelling to enhance learning.
                   </Card.Text>
-                  <Card.Link href="https://github.com/Indiphe/LLM" target="_blank">GitHub</Card.Link>
-                  <Card.Link href="https://starlit-zabaione-555640.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  <Card.Link className='Links'  href="https://github.com/Indiphe/LLM" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='Links'  href="https://starlit-zabaione-555640.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -48,8 +48,8 @@ const Projects = () => {
                   <Card.Text>
                     A beautifully styled croissant recipe site built with SEO best practices and fully responsive design. This project tested and refined my HTML/CSS skills with an emphasis on mobile-first layouts and web accessibility.
                   </Card.Text>
-                  <Card.Link href="https://github.com/Indiphe/responsive" target="_blank">GitHub</Card.Link>
-                  <Card.Link href="https://gleaming-cocada-019146.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  <Card.Link className='Links'  href="https://github.com/Indiphe/responsive" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='Links'  href="https://gleaming-cocada-019146.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -66,8 +66,8 @@ const Projects = () => {
             Built with SEO optimization and a clean UI, this project reflects our team’s focus on
             user-centric design and front-end best practices.
           </Card.Text>
-          <Card.Link href="https://github.com/Indiphe/Indiphe_Nondlazi" target="_blank">GitHub</Card.Link>
-          <Card.Link href="https://celebrated-frangipane-3787b6.netlify.app/" target="_blank">Live Demo</Card.Link>
+          <Card.Link className='Links' href="https://github.com/Indiphe/Indiphe_Nondlazi" target="_blank">GitHub</Card.Link>
+          <Card.Link className='Links' href="https://celebrated-frangipane-3787b6.netlify.app/" target="_blank">Live Demo</Card.Link>
         </Card.Body>
       </Card>
     </Col>
@@ -76,7 +76,7 @@ const Projects = () => {
 
       {/* Group Projects */}
       <div id="group-projects">
-          <h3 className="text-success mb-4">Group Projects</h3>
+          <h3 className="text-primary mb-4">Group Projects</h3>
           <Row className="gy-4">
             <Col md={4}>
               <Card className="h-100 shadow-sm">
@@ -90,8 +90,8 @@ const Projects = () => {
                   <Card.Subtitle>
                     Role: Backend Developer 
                   </Card.Subtitle>
-                  <Card.Link href="https://github.com/Indiphe/chat-app" target="_blank">GitHub</Card.Link>
-                  <Card.Link href="https://aesthetic-frangipane-09091a.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  <Card.Link className='Links'  href="https://github.com/Indiphe/chat-app" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='Links'  href="https://aesthetic-frangipane-09091a.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -109,8 +109,8 @@ const Projects = () => {
                   <Card.Subtitle>
                     Role: Frontend Developer 
                   </Card.Subtitle>
-                  <Card.Link href="https://github.com/buds345/Home-Page" target="_blank">GitHub</Card.Link>
-                  <Card.Link href="https://jolly-sopapillas-2589b1.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  <Card.Link className='Links'  href="https://github.com/buds345/Home-Page" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='Links'  href="https://jolly-sopapillas-2589b1.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
               </Col>
@@ -128,7 +128,7 @@ const Projects = () => {
                   <Card.Subtitle>
                     Role: Fullstack Developer 
                   </Card.Subtitle>
-                  <Card.Link href="https://github.com/Indiphe/Khanya-Best-Quality-Garments" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='Links' href="https://github.com/Indiphe/Khanya-Best-Quality-Garments" target="_blank">GitHub</Card.Link>
                 </Card.Body>
               </Card>
               </Col>
@@ -146,7 +146,7 @@ const Projects = () => {
                     <Card.Subtitle>
                     Role: Reasearch and Visualisation 
                   </Card.Subtitle>
-                  <Card.Link href="https://github.com/Indiphe/Code-Cartel-s" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='Links'  href="https://github.com/Indiphe/Code-Cartel-s" target="_blank">GitHub</Card.Link>
                 </Card.Body>
               </Card>
               </Col>

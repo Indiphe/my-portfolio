@@ -2,8 +2,8 @@
   text-align: center;
 }
 .Appcontainer{
-  background-color:#E8E8E8;
-
+  
+  background:rgb(219, 187, 6) ;
 }
 .App-logo {
   height: 40vmin;
@@ -49,18 +49,35 @@
 
 .custom-nav .nav-link:hover,
 .custom-nav .dropdown-toggle:hover {
-  color: #FEEAFE !important;
+  color: whitesmoke !important;
   text-decoration: underline;
   
 }
 .custom-nav .dropdown-menu .dropdown-item {
-  color:#510F52;
+  color:black;
   background-color: white ;
   
 }
 
 .custom-nav .dropdown-menu .dropdown-item:hover {
-  background-color: #510F52;
+  background-color: rgb(219, 187, 6) ;
   color: #E8E8E8;
 }
 
+  .custom-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background:rgb(219, 187, 6) ;
+    border:2px solid rgba(155, 133, 11, 0.77) ; 
+    border-radius: 20px;
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-style: oblique;
+  }
+     .skills-container{
+      background:rgb(219, 187, 6) ;
+
+     }

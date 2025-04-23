@@ -5,7 +5,7 @@ import './App.css';
 
 const Header = () => {
   return (
-    <Navbar style={{ backgroundColor: '#510F52' }} variant="dark" expand="lg" sticky="top">
+    <Navbar style={{ backgroundColor: 'rgba(155, 133, 11, 0.77)' }} variant="dark" expand="lg" sticky="top">
 
       <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
 
