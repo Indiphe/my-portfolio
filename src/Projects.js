@@ -4,13 +4,13 @@ import './Projects.css'; // Optional custom CSS for advanced styling
 
 const Projects = () => {
   return (
-    <section id="projects" className="my-5">
+    <section id="projects" className="projects-container" style={{ padding: '40px 20px', backgroundColor: 'rgb(219, 187, 6)' }}>
       <Container>
-        <h2 className="text-center mb-5">My Projects</h2>
+        <h2 className="section-title">My Projects</h2>
 
       {/* Individual Projects */}
       <div id="individual-projects" className="mb-5">
-          <h3 className="text-primary mb-4">Individual Projects</h3>
+          <h3 className="section-title" style={{fontSize: '1.5rem', color:'#66590D'}}>Individual Projects</h3>
           <Row className="gy-4">
             <Col md={4}>
               <Card className="h-100 shadow-sm">
@@ -76,7 +76,7 @@ const Projects = () => {
 
       {/* Group Projects */}
       <div id="group-projects">
-          <h3 className="text-primary mb-4">Group Projects</h3>
+          <h3 className="section-title" style={{fontSize: '1.5rem', color:'#66590D'}}>Group Projects</h3>
           <Row className="gy-4">
             <Col md={4}>
               <Card className="h-100 shadow-sm">
@@ -154,6 +154,7 @@ const Projects = () => {
         </div>
       </Container>
     </section>
+   
   );
 };
 

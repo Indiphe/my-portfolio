@@ -7,34 +7,34 @@ const frontendSkills = [
   { title: 'React', img: '/favicon.ico' },
   { title: 'Python', img: '/python-logo.png' },
   { title: 'Java', img: '/java.png' },
-  { title: 'JavaScript', img: '/javascript.png' },
+  { title: 'JavaScript', img: '/Jscript.png' },
 ];
 
 const backendSkills = [
-  { title: 'Node.js', img: '/nodelogo.png' },
+  { title: 'Node.js', img: '/node.png' },
   { title: 'Firebase', img: '/firebaselogo.png' },
   { title: 'Oracle Apex', img: '/oracleapex.png' },
-  { title: 'MySQL', img: '/mysql.png' },
+  { title: 'MySQL', img: '/sql.png' },
 ];
 
 const familiarTools = [
   { title: 'Intelli J', img: '/intellij.png' },
-  { title: 'Postman', img: '/postmanlogo.png' },
+  { title: 'Postman', img: '/postman.png' },
   { title: 'VS Code', img: '/vscode.png' },
   { title: 'Jira', img: '/jiralogo.png' },
 ];
 
 const Skills = () => {
   return (
-    <section  id="skills" style={{ padding: '40px 20px', backgroundColor: '#f5f5f5' }}>
+    <section id='skills' className="skills-container" style={{ padding: '40px 20px', backgroundColor: 'rgb(219, 187, 6) ' }}>
       <Container >
-        <h2 className="text-center mb-4">My Skills</h2>
+        <h2 className="section-title">My Skills</h2>
 
-        <h4 className="text-center text-secondary mb-3">Frontend</h4>
+        <h4 className="section-title" style={{fontSize: '1.5rem', color:'#66590D'}}>Frontend</h4>
         <Row className="g-4 mb-5">
           {frontendSkills.map((skill, index) => (
             <Col key={index} xs={6} md={3}>
-              <Card className="h-100 text-center">
+              <Card id='skill-cards' className="h-100 text-center">
                 <Card.Img variant="top" src={skill.img} alt={skill.title} style={{ height: '100px', objectFit: 'contain', padding: '10px' }} />
                 <Card.Body>
                   <Card.Title>{skill.title}</Card.Title>
@@ -44,11 +44,11 @@ const Skills = () => {
           ))}
         </Row>
 
-        <h4 className="text-center text-secondary mb-3">Backend</h4>
+        <h4 className="section-title" style={{fontSize: '1.5rem', color:'#66590D'}}>Backend</h4>
         <Row className="g-4">
           {backendSkills.map((skill, index) => (
             <Col key={index} xs={6} md={3}>
-              <Card className="h-100 text-center">
+              <Card id='skill-cards' className="h-100 text-center">
                 <Card.Img variant="top" src={skill.img} alt={skill.title} style={{ height: '100px', objectFit: 'contain', padding: '10px' }} />
                 <Card.Body>
                   <Card.Title>{skill.title}</Card.Title>
@@ -58,11 +58,11 @@ const Skills = () => {
           ))}
         </Row>
 
-        <h4 className="text-center text-secondary mb-3">Familiar Tools</h4>
+        <h4 className="section-title" style={{fontSize: '1.5rem', color:'#66590D'}}>Familiar Tools</h4>
         <Row className="g-4">
           {familiarTools.map((skill, index) => (
             <Col key={index} xs={6} md={3}>
-              <Card className="h-100 text-center">
+              <Card id='skill-cards' className="h-100 text-center">
                 <Card.Img variant="top" src={skill.img} alt={skill.title} style={{ height: '100px', objectFit: 'contain', padding: '10px' }} />
                 <Card.Body>
                   <Card.Title>{skill.title}</Card.Title>

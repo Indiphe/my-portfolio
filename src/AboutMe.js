@@ -41,9 +41,15 @@ const AboutMe = () => {
             </div>
 
             {/* Button Below the Paragraph */}
-            <a href="/cv.pdf" download="YourName_CV.pdf">
-              <Button  style={{ backgroundColor: 'rgb(141, 127, 46)', border:'2px solid rgba(155, 133, 11, 0.77)' }}  variant="primary" className="mt-3">Download CV</Button>
-            </a>
+            <a
+  href="/cv.pdf"
+  download="Indiphe_Nondlazi_CV.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-outline-dark me-3"
+>
+  Download CV
+</a>
           </Col>
 
           {/* Right Side - Image */}
