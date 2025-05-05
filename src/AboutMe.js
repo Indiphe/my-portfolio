@@ -1,12 +1,21 @@
 import React from 'react';
 import Typical from 'react-typical';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 
 
 const AboutMe = () => {
   return (
-    <section id="about" className="my-5">
+    <section
+    id="about"
+    className="app-container"
+    style={{
+      scrollMarginTop: '80px',
+      scrollPaddingTop: '80px',
+      backgroundColor: 'transparent'
+    }}
+  >
+  
       <Container>
         <Row className="align-items-center">
           {/* Left Side - Text */}
@@ -27,16 +36,18 @@ const AboutMe = () => {
             </h3>
             <div class="custom-card">
 
-            <p>
-         I have recently completed my final year of a diploma in ICT,
-         specializing in Applications Development, at Walter Sisulu University (BCC-Potsdam), and I am currently awaiting graduation. 
+            <p >
+            I recently completed my diploma in ICT with a specialization in Applications Development at Walter Sisulu University
+             (BCC-Potsdam), and currently serve as a Software Development Associate at Capaciti, where I’ll continue 
+             contributing for the rest of the year.
 
-         As an ambitious and goal-driven individual, I am committed to personal and professional growth. I possess strong communication, 
-         interpersonal, and leadership skills, coupled with resilience and the ability to multitask effectively. 
+            Driven by a passion for growth and excellence, I bring strong communication, leadership, and interpersonal 
+            skills, along with the ability to effectively manage multiple tasks.
 
-        To enhance my technical expertise, I have completed several extracurricular courses.
-         I am now actively seeking IT job opportunities and internships to gain valuable industry exposure and experience, 
-         with the aim of contributing to the growth and success of an organization.
+             To strengthen my full stack development expertise, I’ve earned certifications in various technologies,
+              allowing me to stay current with industry trends. While focused on my current role, I’m also exploring
+              future IT job opportunities and internships to further refine my skills and make a meaningful impact in
+              the field.
             </p>
             </div>
 
@@ -54,12 +65,13 @@ const AboutMe = () => {
 
           {/* Right Side - Image */}
           <Col md={6} className="text-center">
-            <img 
-              src="/formalImage2.jpg" 
-              alt="My Profile" 
-              className="img-fluid rounded-circle" 
-              width="250"
-            />
+          <img 
+  src="/formalImage2.jpg" 
+  alt="My Profile" 
+  className="img-fluid rounded-circle custom-profile-img"
+/>
+
+
           </Col>
         </Row>
       </Container>

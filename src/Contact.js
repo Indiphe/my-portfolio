@@ -10,11 +10,16 @@ const Contact = () => {
   const handleSendMessage = (e) => {
     e.preventDefault();
 
-    // Create a mailto link with the user input
+ 
     const mailtoLink = `mailto:indipheyonwaba@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
 
-    // Open the email client
+    // to open the user's default email client
     window.location.href = mailtoLink;
+     // to Clear the form fields aftrer sending message
+  setName('');
+  setEmail('');
+  setSubject('');
+  setMessage('');
   };
 
   return (
@@ -46,15 +51,7 @@ const Contact = () => {
               </div>
             </a>
           </div>
-          <div className="info-box">
-            <a href="tel:+27786503907" className="phone-link">
-              <span className="info-icon">📱</span>
-              <div>
-                <h3>Call:</h3>
-                <p>+27 786503907</p>
-              </div>
-            </a>
-          </div>
+        
         </div>
 
         <form onSubmit={handleSendMessage} className="contact-form">

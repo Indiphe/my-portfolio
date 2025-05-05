@@ -1,9 +1,15 @@
 .App {
   text-align: center;
 }
-.Appcontainer{
-  
-  background:rgb(219, 187, 6) ;
+.custom-profile-img {
+  width: 350px;
+  object-fit: cover;
+  padding-top: 50px;
+}
+
+.Appcontainer {
+  background-color: #E7B930;
+
 }
 .App-logo {
   height: 40vmin;
@@ -55,12 +61,12 @@
 }
 .custom-nav .dropdown-menu .dropdown-item {
   color:black;
-  background-color: white ;
+  background-color: transparent;
   
 }
 
 .custom-nav .dropdown-menu .dropdown-item:hover {
-  background-color: rgb(219, 187, 6) ;
+  background-color:   #E7B930;
   color: #E8E8E8;
 }
 
@@ -68,19 +74,31 @@
     max-width: 600px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background:rgb(219, 187, 6) ;
-    border:2px solid rgba(155, 133, 11, 0.77) ; 
+    background: transparent;
+    border:2px solid  rgba(155, 133, 11, 0.77); 
     border-radius: 20px;
      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: rgb(78, 54, 54);
     font-style: oblique;
   }
-#skill-cards{
-  background:rgb(219, 187, 6) ;
-  border:2px solid rgba(155, 133, 11, 0.77) ; 
+  #skill-cards {
+    background: rgba(250, 168, 15, 0);
+    border: 2px solid rgba(155, 133, 11, 0.77);
+    min-height: 120px;
+    min-width: 80%;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+.skill-card {
+  min-height: 520px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
 }
+
 
 
 .section-title {
@@ -91,8 +109,8 @@
   margin-bottom: 2.5rem;
   padding-left: 20px;
   text-align: left;
-  background: linear-gradient(to right, rgb(219, 187, 6), rgba(155, 133, 11, 0.77));
-  border-left: 4px solid rgba(155, 133, 11, 0.77);
+  background: linear-gradient(to right,  rgba(250, 168, 15, 0), #9C7F28);
+  border-left: 4px solidrgba(155, 45, 11, 0.77);
   padding-left: 12px;
 }
 
@@ -104,19 +122,28 @@
   transform: translateY(-50%);
   height: 3px;
   width: 60px;
-  background-color: #96ac1b; 
+  background-color: transparent; 
   border-radius: 2px;
-  border-top: 2px double #000;
+ 
 }
-.certificates-container, .contact-container, .projects-container, .skills-container {
-  border: 2px solid rgba(155, 133, 11, 0.77);
+.certificates-container{
+  scroll-margin-top: 80px; /* Makes anchor links scroll properly */
+  padding-top: 80px;        /* Prevents content from hiding under navbar */
+
+}
+.certificates-container, .contact-container, .section{
+  border: 2px solid  rgba(155, 133, 11, 0.77);
   width: 100%;
   max-width: 1200px;
   padding: 20px;     
   box-sizing: border-box; 
-  margin: 40px auto
+  margin: 40px auto;
+  
 }
-
+.section {
+  scroll-margin-top: 80px; /* Makes anchor links scroll properly */
+  padding-top: 80px;        /* Prevents content from hiding under navbar */
+}
 
 .certificate-card {
   max-width: 260px;
@@ -130,12 +157,12 @@
 }
 .contact-section {
   padding: 80px 20px;
-  background-color:  rgb(219, 187, 6);
+  background-color:  rgba(250, 168, 15, 0) ;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
   box-shadow: 0px 15px 50px rgba(155, 133, 11, 0.77);
-  border-radius: 15px;
+
 }
 
 .contact-title {
@@ -150,6 +177,9 @@
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
+  scroll-margin-top: 80px; /* Makes anchor links scroll properly */
+  padding-top: 80px;        /* Prevents content from hiding under navbar */
+
 }
 
 .contact-info {
@@ -166,7 +196,7 @@
   margin: 15px;
   text-align: left;
   padding: 20px;
-  background-color:  rgb(219, 187, 6);
+  background-color:   rgba(250, 168, 15, 0) ;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -218,17 +248,17 @@
   padding: 12px 30px;
   font-size: 16px;
   background-color: transparent;
-  color: #343a40; /* Dark text color */
-  border: 2px solid #343a40; /* Dark border color */
+  color: #343a40;
+  border: 2px solid #343a40; 
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #343a40; /* Dark background on hover */
-  color: white; /* White text color on hover */
-  transform: translateY(-3px); /* Button lift effect */
+  background-color: #343a40; 
+  color: white; 
+  transform: translateY(-3px);
 }
 
 .contact-form button:active {
@@ -251,7 +281,7 @@
 .location-link:hover,
 .email-link:hover,
 .phone-link:hover {
-  background-color: #f0f0f0; /* Light background color on hover */
+  background-color: transparent; 
 }
 
 .location-link .info-icon,

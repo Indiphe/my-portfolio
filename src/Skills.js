@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import './App.css'; // Add styles here or in a separate CSS module
+import './App.css';
 
-<h2 className="text-center mb-4">My Skills</h2>
 const frontendSkills = [
   { title: 'React', img: '/favicon.ico' },
   { title: 'Python', img: '/python-logo.png' },
@@ -24,70 +23,52 @@ const familiarTools = [
   { title: 'Jira', img: '/jiralogo.png' },
 ];
 
+const SkillCategory = ({ title, skills }) => (
+  <div className="mb-3">
+    <h4 className="section-title mt-3 mb-2" style={{ fontSize: '1.25rem', color: '#66590D' }}>{title}</h4>
+    <Row className="gx-3 gy-3">
+      {skills.map((skill, index) => (
+        <Col key={index} xs={12} sm={6} md={3}>
+          <Card id="skill-cards" className="text-center">
+            <Card.Img
+              variant="top"
+              src={skill.img}
+              alt={skill.title}
+              style={{ height: '80px', objectFit: 'contain', padding: '5px', borderRadius: '15px' }}
+            />
+            <Card.Body style={{ padding: '4px' }}>
+              <Card.Title style={{ fontSize: '0.8rem' }}>{skill.title}</Card.Title>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+  </div>
+);
+
 const Skills = () => {
   return (
-    <section id='skills' className="skills-container" style={{ padding: '40px 20px', backgroundColor: 'rgb(219, 187, 6) ' }}>
-      <Container >
-        <h2 className="section-title">My Skills</h2>
+    <section id="skills" className="section" style={{ padding: '10px' }}>
+      <Container fluid="lg">
+        <h2 className="text-center section-title mb-3">My Skills</h2>
 
-        <h4 className="section-title" style={{fontSize: '1.5rem', color:'#66590D'}}>Frontend</h4>
-        <Row className="g-4 mb-5">
-          {frontendSkills.map((skill, index) => (
-            <Col key={index} xs={6} md={3}>
-              <Card id='skill-cards' className="h-100 text-center">
-                <Card.Img variant="top" src={skill.img} alt={skill.title} style={{ height: '100px', objectFit: 'contain', padding: '10px' }} />
-                <Card.Body>
-                  <Card.Title>{skill.title}</Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+        <SkillCategory title="Frontend" skills={frontendSkills} />
+        <SkillCategory title="Backend" skills={backendSkills} />
+        <SkillCategory title="Familiar Tools" skills={familiarTools} />
 
-        <h4 className="section-title" style={{fontSize: '1.5rem', color:'#66590D'}}>Backend</h4>
-        <Row className="g-4">
-          {backendSkills.map((skill, index) => (
-            <Col key={index} xs={6} md={3}>
-              <Card id='skill-cards' className="h-100 text-center">
-                <Card.Img variant="top" src={skill.img} alt={skill.title} style={{ height: '100px', objectFit: 'contain', padding: '10px' }} />
-                <Card.Body>
-                  <Card.Title>{skill.title}</Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-
-        <h4 className="section-title" style={{fontSize: '1.5rem', color:'#66590D'}}>Familiar Tools</h4>
-        <Row className="g-4">
-          {familiarTools.map((skill, index) => (
-            <Col key={index} xs={6} md={3}>
-              <Card id='skill-cards' className="h-100 text-center">
-                <Card.Img variant="top" src={skill.img} alt={skill.title} style={{ height: '100px', objectFit: 'contain', padding: '10px' }} />
-                <Card.Body>
-                  <Card.Title>{skill.title}</Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-        <div className="text-center mt-5">
-<a
-  href="https://www.linkedin.com/in/indiphe-nondlazi/details/skills/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn btn-outline-dark"
->
-  View more on LinkedIn
-</a>
-</div>
+        <div className="text-center mt-3">
+          <a
+            href="https://www.linkedin.com/in/indiphe-nondlazi/details/skills/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline-dark btn-sm"
+          >
+            View more on LinkedIn
+          </a>
+        </div>
       </Container>
     </section>
-    
   );
 };
 
-
-
 export default Skills;
-
