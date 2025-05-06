@@ -53,26 +53,35 @@ const AboutMe = () => {
 
             {/* Button Below the Paragraph */}
             <a
-  href="\IndipheCV_update.pdf (2).pdf"
+  href="/IndipheCV.pdf"
   download="Indiphe_Nondlazi_CV.pdf"
   target="_blank"
   rel="noopener noreferrer"
-  className="btn btn-outline-dark me-3"
+  className="btn btn-outline-dark me-3 custom-btn"
+  id='custom-btn'
 >
   Download CV
 </a>
-          </Col>
-
-          {/* Right Side - Image */}
-          <Col md={6} className="text-center">
-          <img 
-  src="/formalImage2.jpg" 
-  alt="My Profile" 
-  className="img-fluid rounded-circle custom-profile-img"
-/>
-
 
           </Col>
+
+          <Col md={6} className="text-left">
+  <img
+    src="/formalImage2.jpg"
+    alt="My Profile"
+    style={{
+      width: '450px',   // Width of the image
+      height: '350px',  // Height of the image
+      objectFit: 'cover',
+      borderRadius: '2%', // Optional rounding of the corners
+      marginLeft: '20px',  // Adds space between the text and image
+      border: '2px solid #B13E81',
+      marginLeft: '150px',
+      marginBottom: '80px',
+
+    }}
+  />
+</Col>
         </Row>
       </Container>
     </section>

@@ -19,8 +19,8 @@ const Projects = () => {
                   <Card.Text>
                     A real-time weather forecasting app built with HTML, CSS, and JavaScript. 
                   </Card.Text>
-                  <Card.Link className='Links' href="https://github.com/Indiphe/myweatherapp" target="_blank">GitHub</Card.Link>
-                  <Card.Link className='Links'  href="https://dazzling-khapse-dffb4a.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover' href="https://github.com/Indiphe/myweatherapp" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://dazzling-khapse-dffb4a.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -36,8 +36,8 @@ const Projects = () => {
                   <Card.Subtitle>
                     Role: Backend Developer 
                   </Card.Subtitle>
-                  <Card.Link className='Links'  href="https://github.com/Indiphe/chat-app" target="_blank">GitHub</Card.Link>
-                  <Card.Link className='Links'  href="https://aesthetic-frangipane-09091a.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://github.com/Indiphe/chat-app" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://aesthetic-frangipane-09091a.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -54,8 +54,8 @@ const Projects = () => {
                   <Card.Subtitle>
                     Role: Frontend Developer 
                   </Card.Subtitle>
-                  <Card.Link className='Links'  href="https://github.com/buds345/Home-Page" target="_blank">GitHub</Card.Link>
-                  <Card.Link className='Links'  href="https://jolly-sopapillas-2589b1.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://github.com/buds345/Home-Page" target="_blank">GitHub</Card.Link>
+                  <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://jolly-sopapillas-2589b1.netlify.app/" target="_blank">Live Demo</Card.Link>
                 </Card.Body>
               </Card>
               </Col>
@@ -66,7 +66,8 @@ const Projects = () => {
     href="https://www.linkedin.com/in/indiphe-nondlazi/details/certifications/"
     target="_blank"
     rel="noopener noreferrer"
-    className="btn btn-outline-dark"
+  className="btn btn-outline-dark me-3 custom-btn"
+  id='custom-btn'
   >
     View more on LinkedIn
   </a>

@@ -53,7 +53,9 @@ const Certificates = () => {
     href="https://www.linkedin.com/in/indiphe-nondlazi/details/certifications/"
     target="_blank"
     rel="noopener noreferrer"
-    className="btn btn-outline-dark"
+
+  className="btn btn-outline-dark me-3 custom-btn"
+  id='custom-btn'
   >
     View more on LinkedIn
   </a>

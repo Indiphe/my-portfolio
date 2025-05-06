@@ -1,14 +1,11 @@
 .App {
   text-align: center;
 }
-.custom-profile-img {
-  width: 350px;
-  object-fit: cover;
-  padding-top: 50px;
-}
+
 
 .Appcontainer {
-  background-color: #E7B930;
+  background-color: #bd448a;
+  color: black;
 
 }
 .App-logo {
@@ -65,32 +62,31 @@
   
 }
 
-.custom-nav .dropdown-menu .dropdown-item:hover {
-  background-color:   #E7B930;
-  color: #E8E8E8;
-}
+
 
   .custom-card {
     max-width: 600px;
     margin: 2rem auto;
     padding: 1.5rem;
     background: transparent;
-    border:2px solid  rgba(155, 133, 11, 0.77); 
+    border:2px solid  #B13E81; 
     border-radius: 20px;
      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: rgb(78, 54, 54);
+    color: black;
+    font-weight:normal;
     font-style: oblique;
   }
   #skill-cards {
     background: rgba(250, 168, 15, 0);
-    border: 2px solid rgba(155, 133, 11, 0.77);
+    border: 2px solid #B13E81;
     min-height: 120px;
     min-width: 80%;
     border-radius: 8px;
     padding: 10px;
     margin: 0 auto;
+    color: #E8E8E8;
   }
   
 .skill-card {
@@ -109,7 +105,7 @@
   margin-bottom: 2.5rem;
   padding-left: 20px;
   text-align: left;
-  background: linear-gradient(to right,  rgba(250, 168, 15, 0), #9C7F28);
+  background: linear-gradient(to right,  rgba(250, 168, 15, 0), #B13E81);
   border-left: 4px solidrgba(155, 45, 11, 0.77);
   padding-left: 12px;
 }
@@ -132,7 +128,7 @@
 
 }
 .certificates-container, .contact-container, .section{
-  border: 2px solid  rgba(155, 133, 11, 0.77);
+  border: 2px solid  #B13E81;
   width: 100%;
   max-width: 1200px;
   padding: 20px;     
@@ -161,7 +157,7 @@
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
-  box-shadow: 0px 15px 50px rgba(155, 133, 11, 0.77);
+  box-shadow: 0px 15px 50px #B13E81;
 
 }
 
@@ -230,7 +226,7 @@
 .contact-form input,
 .contact-form textarea {
   padding: 14px 20px;
-  border: 2px solid rgba(155, 133, 11, 0.77);
+  border: 2px solid #B13E81;
   border-radius: 8px;
   font-size: 16px;
   width: 100%;
@@ -239,7 +235,7 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: rgba(155, 133, 11, 0.77);
+  border-color:#B13E81;
   outline: none;
   box-shadow: 0 0 5pxrgba(155, 133, 11, 0.77);
 }
@@ -247,13 +243,35 @@
   align-self: center;
   padding: 12px 30px;
   font-size: 16px;
-  background-color: transparent;
+  background-color: pink;
   color: #343a40;
-  border: 2px solid #343a40; 
+  border: 2px solid #B13E81; 
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
+#custom-btn {
+  align-self: center;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: pink;
+  color: #343a40;
+  border: 2px solid #B13E81;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#custom-btn:hover {
+  background-color: #343a40;
+  color: white;
+  transform: translateY(-3px);
+}
+
+#custom-btn:active {
+  transform: translateY(0);
+}
+
 
 .contact-form button:hover {
   background-color: #343a40; 

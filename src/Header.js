@@ -4,7 +4,7 @@ import './App.css';
 
 const Header = () => {
   return (
-    <Navbar style={{ backgroundColor: 'rgba(155, 133, 11, 0.77)' }} variant="dark" expand="lg" sticky="top">
+    <Navbar style={{ backgroundColor: '#B13E81' }} variant="dark" expand="lg" sticky="top">
       <Container>
         {/* "My Portfolio" links to #about */}
         <Navbar.Brand href="#about" style={{paddingRight:'15px'}}>My Portfolio</Navbar.Brand>
