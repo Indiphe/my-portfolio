@@ -63,13 +63,13 @@ const Projects = () => {
         </div>
         <div style={{ textAlign: 'center', marginTop: '1rem' }}>
   <a
-    href="https://www.linkedin.com/in/indiphe-nondlazi/details/certifications/"
+    href="https://github.com/Indiphe?tab=repositories"
     target="_blank"
     rel="noopener noreferrer"
   className="btn btn-outline-dark me-3 custom-btn"
   id='custom-btn'
   >
-    View more on LinkedIn
+    View more on github
   </a>
   </div>
       </Container>
