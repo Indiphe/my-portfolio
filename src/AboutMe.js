@@ -62,27 +62,73 @@ const AboutMe = () => {
 >
   Download CV
 </a>
+</Col>
 
-          </Col>
-
-          <Col md={6} className="text-left">
+<Col md={6} className="text-left d-flex flex-column align-items-center">
   <img
     src="/formalImage2.jpg"
-    alt="My Profile"
+    alt="Profile of Indiphe Nondlazi"
     style={{
-      width: '450px',   // Width of the image
-      height: '350px',  // Height of the image
+      width: '450px',
+      height: '350px',
       objectFit: 'cover',
-      borderRadius: '2%', // Optional rounding of the corners
-      marginLeft: '20px',  // Adds space between the text and image
+      borderRadius: '60%',
       border: '2px solid #B13E81',
-      marginLeft: '150px',
-      marginBottom: '80px',
-
+      marginBottom: '30px',
     }}
   />
+
+  <div className="social-links" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+    <a
+      href="https://www.linkedin.com/in/indiphe-nondlazi/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      style={{ color: '#FEEAFE' }}
+    >
+      <i className="fab fa-linkedin fa-3x"style={{
+      transition: 'transform 0.3s',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+    onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+  ></i>
+    </a>
+
+    <a
+      href="https://www.facebook.com/share/16S6L1pK7a/?mibextid=wwXIfr"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      style={{ color: '#FEEAFE' }}
+    >
+      <i className="fab fa-facebook fa-3x"style={{
+      transition: 'transform 0.3s',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+    onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+  ></i>
+    </a>
+
+    <a
+      href="https://github.com/Indiphe"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+      style={{ color: '#FEEAFE' }}
+    >
+ <i
+    className="fab fa-github fa-3x"
+    style={{
+      transition: 'transform 0.3s',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+    onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+  ></i>
+    </a>
+  </div>
 </Col>
-        </Row>
+</Row>
+
       </Container>
     </section>
   );

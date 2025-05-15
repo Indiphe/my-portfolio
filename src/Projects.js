@@ -4,7 +4,7 @@ import './Projects.css';
 
 const Projects = () => {
   return (
-    <section id="projects" className="section" style={{ padding: '40px 20px', backgroundColor: 'transparent' }}>
+    <section id="projects" className="section" style={{ padding: '40px 20px', backgroundColor: 'transparent' ,   color: 'seashell'}}>
       <Container>
         <h2 className="section-title">My Projects</h2>
 
@@ -15,13 +15,16 @@ const Projects = () => {
               <Card className="h-100 shadow-sm">
                 <Card.Img variant="top"   src="/weather.jpg" />
                 <Card.Body>
+                <div className="card-text-box">
                   <Card.Title>Weather Application</Card.Title>
                   <Card.Text>
                     A real-time weather forecasting app built with HTML, CSS, and JavaScript. 
                   </Card.Text>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover' href="https://github.com/Indiphe/myweatherapp" target="_blank">GitHub</Card.Link>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://dazzling-khapse-dffb4a.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  </div>
                 </Card.Body>
+             
               </Card>
             </Col>
 
@@ -29,6 +32,7 @@ const Projects = () => {
               <Card className="h-100 shadow-sm">
                 <Card.Img variant="top" src="/chat-application.jpg" />
                 <Card.Body>
+                <div className="card-text-box">
                   <Card.Title>Chat Web-application</Card.Title>
                   <Card.Text>
                     A real-time chat application designed to facilitate seamless communication among users. 
@@ -38,6 +42,7 @@ const Projects = () => {
                   </Card.Subtitle>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://github.com/Indiphe/chat-app" target="_blank">GitHub</Card.Link>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://aesthetic-frangipane-09091a.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>
@@ -47,6 +52,7 @@ const Projects = () => {
               <Card className="h-100 shadow-sm">
                 <Card.Img variant="top" src="/QuadJewellerswebsite.jpg" />
                 <Card.Body>
+                <div className="card-text-box">
                   <Card.Title>Jewellery store Web-application</Card.Title>
                   <Card.Text>
                     A moder web application for a jewellery store, designed to enhance user experience and streamline online shopping.
@@ -56,6 +62,7 @@ const Projects = () => {
                   </Card.Subtitle>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://github.com/buds345/Home-Page" target="_blank">GitHub</Card.Link>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://jolly-sopapillas-2589b1.netlify.app/" target="_blank">Live Demo</Card.Link>
+                  </div>
                 </Card.Body>
               </Card>
               </Col>
