@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 const Certificates = () => {
   return (
     <section id="certificates" className="my-5">
-      <Container className="certificates-container" style={{ padding: '40px 20px', backgroundColor: 'transparent' }}>
+      <Container className="certificates-container" style={{ padding: '40px 20px', backgroundColor: 'transparent', scrollMarginTop: '80px', paddingTop: '80px' }}>
         <h2 className="section-title">Certificates</h2>
         
         <Row className="gy-4">

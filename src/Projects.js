@@ -5,15 +5,15 @@ import './Projects.css';
 const Projects = () => {
   return (
     <section id="projects" className="section" style={{ padding: '40px 20px', backgroundColor: 'transparent' ,   color: 'seashell'}}>
-      <Container>
-        <h2 className="section-title">My Projects</h2>
+<Container fluid="lg">
+<h2 className="section-title">My Projects</h2>
 
     
       <div id="individual-projects" className="mb-5">
           <Row className="gy-4">
-            <Col md={4}>
-              <Card className="h-100 shadow-sm">
-                <Card.Img variant="top"   src="/weather.jpg" />
+          <Col xs={12} sm={6} md={6} lg={4}>
+          <Card className="h-100 shadow-sm">
+                <Card.Img variant="top"  className="card-img-top"  src="/weather.jpg" />
                 <Card.Body>
                 <div className="card-text-box">
                   <Card.Title>Weather Application</Card.Title>
@@ -28,9 +28,9 @@ const Projects = () => {
               </Card>
             </Col>
 
-          <Col md={4}>
-              <Card className="h-100 shadow-sm">
-                <Card.Img variant="top" src="/chat-application.jpg" />
+            <Col xs={12} sm={6} md={6} lg={4}>
+            <Card className="h-100 shadow-sm">
+                <Card.Img variant="top"  className="card-img-top" src="/chat-application.jpg" />
                 <Card.Body>
                 <div className="card-text-box">
                   <Card.Title>Chat Web-application</Card.Title>
@@ -48,9 +48,9 @@ const Projects = () => {
             </Col>
 
             
-            <Col md={4}>
-              <Card className="h-100 shadow-sm">
-                <Card.Img variant="top" src="/QuadJewellerswebsite.jpg" />
+            <Col xs={12} sm={6} md={6} lg={4}>
+            <Card className="h-100 shadow-sm">
+                <Card.Img variant="top"  className="card-img-top" src="/QuadJewellerswebsite.jpg" />
                 <Card.Body>
                 <div className="card-text-box">
                   <Card.Title>Jewellery store Web-application</Card.Title>

@@ -19,8 +19,8 @@ const AboutMe = () => {
       <Container>
         <Row className="align-items-center">
           {/* Left Side - Text */}
-          <Col md={6}>
-            <h2>Hello, I'm Indiphe Yonwaba Nondlazi 👋</h2>
+          <Col xs={12} md={6}>
+          <h2>Hello, I'm Indiphe Yonwaba Nondlazi 👋</h2>
             <h6>Full-stack developer based in Gqeberha, South Africa</h6>
             <h3>
               <Typical
@@ -34,7 +34,7 @@ const AboutMe = () => {
                 wrapper="span"
               />
             </h3>
-            <div class="custom-card">
+            <div className="custom-card">
 
             <p >
             I recently completed my diploma in ICT with a specialization in Applications Development at Walter Sisulu University
@@ -64,13 +64,20 @@ const AboutMe = () => {
 </a>
 </Col>
 
-<Col md={6} className="text-left d-flex flex-column align-items-center">
+<Col xs={12} md={6} className="text-left d-flex flex-column align-items-center">
   <img
     src="/formalImage2.jpg"
     alt="Profile of Indiphe Nondlazi"
     style={{
-      width: '450px',
-      height: '350px',
+
+        width: '100%',
+        maxWidth: '400px',
+        height: 'auto',
+        objectFit: 'cover',
+        borderRadius: '60%',
+        border: '2px solid #B13E81',
+        marginBottom: '30px',
+    
       objectFit: 'cover',
       borderRadius: '60%',
       border: '2px solid #B13E81',

@@ -69,6 +69,7 @@ const Contact = () => {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+            
             />
           </div>
           <input
@@ -84,6 +85,7 @@ const Contact = () => {
             required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            
           ></textarea>
           <button type="submit" className="btn btn-outline-dark me-3">
             Send Message
