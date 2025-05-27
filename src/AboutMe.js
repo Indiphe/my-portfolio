@@ -53,8 +53,8 @@ const AboutMe = () => {
 
             {/* Button Below the Paragraph */}
             <a
-  href="/IndipheCV.pdf"
-  download="Indiphe_Nondlazi_CV.pdf"
+  href="/CV_of_Indiphe_Nondlazi.pdf"
+  download="CV of Indiphe_Nondlazi.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="btn btn-outline-dark me-3 custom-btn"
