@@ -61,6 +61,7 @@
   }
   #projects .card-link, #projects .card-subtitle {
     color: #B13E81 !important;
+    font-weight: normal;
   }
   /* Optional hover color for links */
   #projects .card-link:hover {

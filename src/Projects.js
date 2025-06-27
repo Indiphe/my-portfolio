@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Projects.css';
 
 const Projects = () => {
@@ -20,6 +22,9 @@ const Projects = () => {
                   <Card.Text>
                     A real-time weather forecasting app built with HTML, CSS, and JavaScript. 
                   </Card.Text>
+                  <Card.Subtitle>
+                       Tech stack:  HTML, CSS, JavaScript 
+                 </Card.Subtitle>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover' href="https://github.com/Indiphe/myweatherapp" target="_blank">GitHub</Card.Link>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://dazzling-khapse-dffb4a.netlify.app/" target="_blank">Live Demo</Card.Link>
                   </div>
@@ -38,7 +43,7 @@ const Projects = () => {
                     A real-time chat application designed to facilitate seamless communication among users. 
                   </Card.Text>
                   <Card.Subtitle>
-                    Role: Backend Developer 
+                    Tech stack: React.js, Firebase
                   </Card.Subtitle>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://github.com/Indiphe/chat-app" target="_blank">GitHub</Card.Link>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://aesthetic-frangipane-09091a.netlify.app/" target="_blank">Live Demo</Card.Link>
@@ -58,7 +63,9 @@ const Projects = () => {
                     A moder web application for a jewellery store, designed to enhance user experience and streamline online shopping.
                   </Card.Text>
                   <Card.Subtitle>
-                    Role: Frontend Developer 
+                    <Card.Subtitle>
+                       Tech stack: html, CSS, JavaScript 
+                </Card.Subtitle>
                   </Card.Subtitle>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://github.com/buds345/Home-Page" target="_blank">GitHub</Card.Link>
                   <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://jolly-sopapillas-2589b1.netlify.app/" target="_blank">Live Demo</Card.Link>
@@ -69,15 +76,9 @@ const Projects = () => {
   </Row>
         </div>
         <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-  <a
-    href="https://github.com/Indiphe?tab=repositories"
-    target="_blank"
-    rel="noopener noreferrer"
-  className="btn btn-outline-dark me-3 custom-btn"
-  id='custom-btn'
-  >
-    View more on github
-  </a>
+<Link to="/Myprojects" className="btn btn-outline-dark me-3 custom-btn" id="custom-btn">
+  View More Projects
+</Link>
   </div>
       </Container>
     </section>
