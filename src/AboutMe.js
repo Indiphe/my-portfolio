@@ -38,8 +38,7 @@ const AboutMe = () => {
 
             <p >
             I recently completed my diploma in ICT with a specialization in Applications Development at Walter Sisulu University
-             (BCC-Potsdam), and currently serve as a Software Development Associate at Capaciti, where I’ll continue 
-             contributing for the rest of the year.
+             (BCC-Potsdam), and currently serve as a Software Development Associate at Capaciti.
 
             Driven by a passion for growth and excellence, I bring strong communication, leadership, and interpersonal 
             skills, along with the ability to effectively manage multiple tasks.
@@ -53,8 +52,8 @@ const AboutMe = () => {
 
             {/* Button Below the Paragraph */}
             <a
-  href="/CV_of_Indiphe_Nondlazi.pdf"
-  download="CV of Indiphe_Nondlazi.pdf"
+  href="/IndipheCV_pe.pdf"
+  download="IndipheCV_pe.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="btn btn-outline-dark me-3 custom-btn"

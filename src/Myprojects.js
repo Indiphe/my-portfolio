@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card  } from 'react-bootstrap';
 import './Projects.css';
 import { Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const Projects = () => {
   return (
