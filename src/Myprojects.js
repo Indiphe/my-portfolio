@@ -52,6 +52,25 @@ const Projects = () => {
                          
                           </Card>
                         </Col>
+
+                     <Col xs={12} sm={6} md={6} lg={4}>
+            <Card className="h-100 shadow-sm">
+                <Card.Img variant="top"  className="card-img-top" src="/bookcradle.png" />
+                <Card.Body>
+                <div className="card-text-box">
+                  <Card.Title>Book Cradle</Card.Title>
+                  <Card.Text>
+                    A library management system that allows users to manage books, members, and transactions efficiently.
+                  </Card.Text>
+                  <Card.Subtitle>
+                    Tech stack: Java, Gradle 
+                  </Card.Subtitle>
+                  <Card.Link className='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover'  href="https://github.com/EmmanualJanuarie/bookcradle2.0" target="_blank">GitHub</Card.Link>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+                  
             
             <Col xs={12} sm={6} md={6} lg={4}>
             <Card className="h-100 shadow-sm">
