@@ -25,7 +25,7 @@ const familiarTools = [
 
 const SkillCategory = ({ title, skills }) => (
   <div className="mb-3">
-    <h4 className="section-title mt-3 mb-2" style={{ fontSize: '1.25rem', color: '#66590D' }}>{title}</h4>
+    <h4 className="section-title mt-3 mb-2" style={{ fontSize: '1.25rem', color: 'seashell' }}>{title}</h4>
     <Row className="gx-3 gy-3">
       {skills.map((skill, index) => (
         <Col key={index} xs={12} sm={6} md={3}>
@@ -61,7 +61,8 @@ const Skills = () => {
             href="https://www.linkedin.com/in/indiphe-nondlazi/details/skills/"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-outline-dark btn-sm"
+            className="btn btn-outline-dark me-3 custom-btn"
+  id='custom-btn'
           >
             View more on LinkedIn
           </a>

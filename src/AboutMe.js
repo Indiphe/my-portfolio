@@ -19,8 +19,8 @@ const AboutMe = () => {
       <Container>
         <Row className="align-items-center">
           {/* Left Side - Text */}
-          <Col md={6}>
-            <h2>Hello, I'm Indiphe Yonwaba Nondlazi 👋</h2>
+          <Col xs={12} md={6}>
+          <h2>Hello, I'm Indiphe Yonwaba Nondlazi 👋</h2>
             <h6>Full-stack developer based in Gqeberha, South Africa</h6>
             <h3>
               <Typical
@@ -34,12 +34,11 @@ const AboutMe = () => {
                 wrapper="span"
               />
             </h3>
-            <div class="custom-card">
+            <div className="custom-card">
 
             <p >
             I recently completed my diploma in ICT with a specialization in Applications Development at Walter Sisulu University
-             (BCC-Potsdam), and currently serve as a Software Development Associate at Capaciti, where I’ll continue 
-             contributing for the rest of the year.
+             (BCC-Potsdam), and currently serve as a Software Development Associate at Capaciti.
 
             Driven by a passion for growth and excellence, I bring strong communication, leadership, and interpersonal 
             skills, along with the ability to effectively manage multiple tasks.
@@ -53,27 +52,89 @@ const AboutMe = () => {
 
             {/* Button Below the Paragraph */}
             <a
-  href="\IndipheCV_update.pdf (2).pdf"
-  download="Indiphe_Nondlazi_CV.pdf"
+  href="/IndipheCV_pe.pdf"
+  download="IndipheCV_pe.pdf"
   target="_blank"
   rel="noopener noreferrer"
-  className="btn btn-outline-dark me-3"
+  className="btn btn-outline-dark me-3 custom-btn"
+  id='custom-btn'
 >
   Download CV
 </a>
-          </Col>
+</Col>
 
-          {/* Right Side - Image */}
-          <Col md={6} className="text-center">
-          <img 
-  src="/formalImage2.jpg" 
-  alt="My Profile" 
-  className="img-fluid rounded-circle custom-profile-img"
-/>
+<Col xs={12} md={6} className="text-left d-flex flex-column align-items-center">
+  <img
+    src="/formalImage2.jpg"
+    alt="Profile of Indiphe Nondlazi"
+    style={{
 
+        width: '100%',
+        maxWidth: '400px',
+        height: 'auto',
+        objectFit: 'cover',
+        borderRadius: '60%',
+        border: '2px solid #B13E81',
+        marginBottom: '30px',
+    
+      objectFit: 'cover',
+      borderRadius: '60%',
+      border: '2px solid #B13E81',
+      marginBottom: '30px',
+    }}
+  />
 
-          </Col>
-        </Row>
+  <div className="social-links" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+    <a
+      href="https://www.linkedin.com/in/indiphe-nondlazi/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      style={{ color: '#FEEAFE' }}
+    >
+      <i className="fab fa-linkedin fa-3x"style={{
+      transition: 'transform 0.3s',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+    onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+  ></i>
+    </a>
+
+    <a
+      href="https://www.facebook.com/share/16S6L1pK7a/?mibextid=wwXIfr"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      style={{ color: '#FEEAFE' }}
+    >
+      <i className="fab fa-facebook fa-3x"style={{
+      transition: 'transform 0.3s',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+    onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+  ></i>
+    </a>
+
+    <a
+      href="https://github.com/Indiphe"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+      style={{ color: '#FEEAFE' }}
+    >
+ <i
+    className="fab fa-github fa-3x"
+    style={{
+      transition: 'transform 0.3s',
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+    onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+  ></i>
+    </a>
+  </div>
+</Col>
+</Row>
+
       </Container>
     </section>
   );

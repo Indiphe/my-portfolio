@@ -1,7 +1,39 @@
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-text-box {
+  padding: 10px 0;
+  font-size: 0.95rem;
+}
+
+/* Tablet-specific fix */
+@media (max-width: 1000.98px) {
+  .card-text-box {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-subtitle {
+    font-size: 0.85rem;
+  }
+
+  #custom-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+
 #projects h3 {
     font-weight: bold;
-    border-left: 5px solid rgba(155, 45, 11, 0.77);
+    border-left: 5px solid #B13E81;
     padding-left: 10px;
+    color: seashell;
   }
   .section {
     scroll-margin-top: 80px; /* Makes anchor links scroll properly */
@@ -9,10 +41,33 @@
   }
   #projects .card {
     transition: transform 0.3s ease;
-    width: 350px;
-    min-height: 150px;  
     background: transparent;
+    color: seashell;
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
+    border: 3px solid #B13E81;
+    flex: 1 1 300px; /* allows it to shrink and grow */
+    max-width: 320px;
+    min-width: 260px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(177, 62, 129, 0.3);
+  }
 
+  
+  #projects .card-body,
+  #projects .card-title,
+  #projects .card-text
+{color: seashell !important;
+  }
+  #projects .card-link, #projects .card-subtitle {
+    color: #B13E81 !important;
+    font-weight: normal;
+  }
+  /* Optional hover color for links */
+  #projects .card-link:hover {
+    color: #a00d5e !important;
+    font-style: italic;
+    font-weight: bolder;
   }
   #projects .card:hover {
     transform: translateY(-5px);
@@ -25,4 +80,15 @@
   .Links{
     font-weight: bold;
   }
- 
+  .card-text-box {
+    border: 1px solid #B13E81;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
+    margin-top: -2px;
+    margin-bottom: -10px;
+    color: seashell;
+    box-shadow: 0 0 10px rgba(177, 62, 129, 0.3);
+  }
+  
+  

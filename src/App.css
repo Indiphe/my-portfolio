@@ -1,14 +1,35 @@
+@media (max-width: 991.98px) {
+  #about h2 {
+    font-size: 1.5rem;
+  }
+
+  #about h6 {
+    font-size: 1rem;
+  }
+
+  #about .custom-card p {
+    font-size: 0.95rem;
+  }
+
+  #about img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 20% !important;
+  }
+
+  .social-links i {
+    font-size: 2.2rem !important;
+  }
+}
+
 .App {
   text-align: center;
 }
-.custom-profile-img {
-  width: 350px;
-  object-fit: cover;
-  padding-top: 50px;
-}
+
 
 .Appcontainer {
-  background-color: #E7B930;
+  background-color: #130122;
+  color: seashell;
 
 }
 .App-logo {
@@ -23,14 +44,16 @@
 }
 
 .App-header {
-  background-color: e3f2fd;
+  background-color: #B13E81;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+z-index: 1000;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: seashell;
 }
 
 .App-link {
@@ -46,28 +69,24 @@
   }
 }
 
+
 .custom-nav .nav-link,
 .custom-nav {
-  color: #E8E8E8 !important;
+  color: seashell !important;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .custom-nav .nav-link:hover,
 .custom-nav .dropdown-toggle:hover {
-  color: whitesmoke !important;
+  color: seashell  !important;
   text-decoration: underline;
   
 }
-.custom-nav .dropdown-menu .dropdown-item {
-  color:black;
+.custom-nav {
+  color: seashell;
   background-color: transparent;
   
-}
-
-.custom-nav .dropdown-menu .dropdown-item:hover {
-  background-color:   #E7B930;
-  color: #E8E8E8;
 }
 
   .custom-card {
@@ -75,42 +94,51 @@
     margin: 2rem auto;
     padding: 1.5rem;
     background: transparent;
-    border:2px solid  rgba(155, 133, 11, 0.77); 
+    border:2px solid  #B13E81; 
     border-radius: 20px;
      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: rgb(78, 54, 54);
+    color: seashell;
+    font-weight:normal;
     font-style: oblique;
   }
   #skill-cards {
     background: rgba(250, 168, 15, 0);
-    border: 2px solid rgba(155, 133, 11, 0.77);
+    border: 2px solid #B13E81;
     min-height: 120px;
-    min-width: 80%;
+    min-width: 60%;
     border-radius: 8px;
     padding: 10px;
     margin: 0 auto;
+    color: seashell;
+    box-shadow: 0 0 20px rgba(177, 62, 129, 0.3);
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
+    border: 1px solid #B13E81;
   }
   
 .skill-card {
   min-height: 520px;
   border-radius: 8px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  color: seashell;
+
 }
 
-
+.SkillCategory{
+color: seashell;
+}
 
 .section-title {
   position: relative;
   font-size: 2rem;
   font-weight: bold;
-  color:#333;
+  color: seashell;
   margin-bottom: 2.5rem;
   padding-left: 20px;
   text-align: left;
-  background: linear-gradient(to right,  rgba(250, 168, 15, 0), #9C7F28);
-  border-left: 4px solidrgba(155, 45, 11, 0.77);
+  background: linear-gradient(to right,  #130122, #B13E81);
+  border-left: 4px solid #B13E81;
   padding-left: 12px;
 }
 
@@ -127,22 +155,24 @@
  
 }
 .certificates-container{
-  scroll-margin-top: 80px; /* Makes anchor links scroll properly */
-  padding-top: 80px;        /* Prevents content from hiding under navbar */
+  scroll-margin-top: 100px; /* Makes anchor links scroll properly */
+  padding-top: 90px;        /* Prevents content from hiding under navbar */
 
 }
 .certificates-container, .contact-container, .section{
-  border: 2px solid  rgba(155, 133, 11, 0.77);
+  border: 2px solid  #B13E81;
   width: 100%;
   max-width: 1200px;
-  padding: 20px;     
+  padding: 40px;     
   box-sizing: border-box; 
   margin: 40px auto;
+  box-shadow: 0 0 15px rgba(177, 62, 129, 0.3);
+  
   
 }
 .section {
-  scroll-margin-top: 80px; /* Makes anchor links scroll properly */
-  padding-top: 80px;        /* Prevents content from hiding under navbar */
+  scroll-margin-top: 90px;
+  padding-top: 80px;   
 }
 
 .certificate-card {
@@ -156,20 +186,20 @@
   padding: 10px;
 }
 .contact-section {
-  padding: 80px 20px;
   background-color:  rgba(250, 168, 15, 0) ;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
-  box-shadow: 0px 15px 50px rgba(155, 133, 11, 0.77);
+  color: seashell;
+  box-shadow: 0px 15px 50px #B13E81;
 
 }
 
 .contact-title {
   font-size: 38px;
   font-weight: 700;
-  color: #333;
-  margin-bottom: 40px;
+  color: seashell;
+  margin-bottom: 10px;
+  margin-top: -30px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -177,8 +207,8 @@
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
-  scroll-margin-top: 80px; /* Makes anchor links scroll properly */
-  padding-top: 80px;        /* Prevents content from hiding under navbar */
+  scroll-margin-top: 90px; /* Makes anchor links scroll properly */
+  padding-top: 90px;        /* Prevents content from hiding under navbar */
 
 }
 
@@ -186,14 +216,14 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .info-box {
   display: flex;
   align-items: center;
-  margin: 15px;
+  margin: 10px;
   text-align: left;
   padding: 20px;
   background-color:   rgba(250, 168, 15, 0) ;
@@ -205,12 +235,13 @@
 .info-box:hover {
   transform: translateY(-5px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .info-icon {
   font-size: 32px;
   margin-right: 15px;
-  color: #0078AA;
+  color: #4a523e;
 }
 
 .contact-form {
@@ -227,19 +258,34 @@
   flex-wrap: wrap;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 14px 20px;
-  border: 2px solid rgba(155, 133, 11, 0.77);
+.contact-form input{
+  padding: 5px;
+  margin-top: -10px;
+  border: 2px solid #B13E81;
   border-radius: 8px;
   font-size: 16px;
   width: 100%;
+  height: 30px;
   transition: all 0.3s ease;
+
 }
+
+.contact-form textarea {
+  border: 2px solid #B13E81;
+  margin-top: -10px;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  height: 70px;
+  transition: all 0.3s ease;
+
+}
+
+
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: rgba(155, 133, 11, 0.77);
+  border-color:#B13E81;
   outline: none;
   box-shadow: 0 0 5pxrgba(155, 133, 11, 0.77);
 }
@@ -247,13 +293,35 @@
   align-self: center;
   padding: 12px 30px;
   font-size: 16px;
-  background-color: transparent;
+  background-color: pink;
   color: #343a40;
-  border: 2px solid #343a40; 
+  border: 2px solid #B13E81;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
+#custom-btn {
+  align-self: center;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: pink;
+  color: #343a40;
+  border: 2px solid #B13E81;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#custom-btn:hover {
+  background-color: #343a40;
+  color: white;
+  transform: translateY(-3px);
+}
+
+#custom-btn:active {
+  transform: translateY(0);
+}
+
 
 .contact-form button:hover {
   background-color: #343a40; 
